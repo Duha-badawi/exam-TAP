@@ -1,0 +1,175 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root {
+    --white: #fff;
+    --brwon: #D1884F;
+    --blue: #008AAA;
+    --bluelight: #3BBADB;
+    --font-family-Poppins: 'Poppins',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+
+}
+#container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: auto;
+    font-size: large;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav ul .home {
+    color: var(--brwon);
+}
+nav ul .home a {
+    color: var(--brwon);
+}
+
+.section{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+
+}
+   /* تنسيق الجزء الأيمن */
+   .right-side {
+    float: right;
+    width: 50%;
+
+}
+.right-side  img{
+    max-width: 75%;
+    max-height: 75%;
+    margin-right: 20%;
+    margin-left:10% ;
+    border-radius: 0 0 0 60%; 
+    box-shadow: -20px 8px 0px var(--blue);
+}
+
+        /* تنسيق الجزء الأيسر */
+        .left-side {
+            float: left;
+            width: 50%;
+            margin-right: 10%;
+            margin-left:20% ;
+            
+        }
+
+        .left-side h1 {
+            color:var(--blue);
+            margin-bottom: 2%;
+
+        }    
+        .left-side h2 {
+            color:var(--blue);
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+        } 
+        .left-side P {
+            color:var(--blue);
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+        } 
+ .changecolor{
+    color:var(--brwon);
+ }          
+
+/* تنسيق الزرين */
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px; 
+    margin: 5px; 
+    background-color: var(--blue);
+    color:var(--white);
+    /* border: none;  */
+    /* إزالة الحدود */
+    border-radius: 5px; /* إضافة زوايا مستديرة */
+    cursor: pointer; /* تغيير شكل المؤشر عند تحويله إلى زر */
+}
+
+.button:hover {
+    background-color: var(--bluelight); /* تغيير لون الخلفية عند تحويل الماوس فوق الزر */
+}        
+.button2 {
+    padding: 10px 20px; 
+    margin: 5px; 
+    background-color: var(--white);
+    color: var(--blue);
+    /* border: none;  */
+    /* إزالة الحدود */
+    border-radius: 5px; /* إضافة زوايا مستديرة */
+    cursor: pointer; /* تغيير شكل المؤشر عند تحويله إلى زر */
+}
+.button2:hover {
+    background-color: var(--bluelight); /* تغيير لون الخلفية عند تحويل الماوس فوق الزر */
+}  
+h2{
+    color:var(--bluelight);
+}
+@media screen and (max-width:580px) {
+    .navbar{
+        justify-content: center;
+    }
+    .navbar li{
+        margin: auto;
+    }
+    .section{
+        margin-top: 50px;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px) {
+    .section{
+        margin-top: 50px;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
